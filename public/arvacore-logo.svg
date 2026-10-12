@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Dark Tech Background Tile -->
+  <rect width="32" height="32" rx="7" fill="#08130c"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" stroke="#10b981" stroke-opacity="0.35" stroke-width="1"/>
+
+  <!-- Water Ripple / Hydrology Wave (Bottom) -->
+  <path d="M4 25 C9 23, 13 27, 18 25 C23 23, 27 26, 28 25" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M6 28 C10 26.5, 14 29, 19 28 C23 27, 26 28.5, 27 28" stroke="#06b6d4" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Central IoT Stem & Signal Waves -->
+  <line x1="16" y1="23" x2="16" y2="10" stroke="#10b981" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Left Rice Leaf / Node Leaf -->
+  <path d="M16 18 C11 17, 8 13, 9 8 C12 8, 15 11, 16 15" fill="#10b981" fill-opacity="0.25" stroke="#10b981" stroke-width="1.4" stroke-linejoin="round"/>
+
+  <!-- Right Rice Leaf / Node Leaf -->
+  <path d="M16 15 C20 14, 23 10, 23 6 C19 6, 17 9, 16 12" fill="#34d399" fill-opacity="0.3" stroke="#34d399" stroke-width="1.4" stroke-linejoin="round"/>
+
+  <!-- Top IoT Sensor Node / Radio Ping Pulse -->
+  <circle cx="16" cy="7" r="2.2" fill="#34d399"/>
+  <circle cx="16" cy="7" r="4.2" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="1.5 1" opacity="0.85"/>
+</svg>
+

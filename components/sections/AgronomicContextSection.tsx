@@ -26,7 +26,7 @@ export const AgronomicContextSection: React.FC = () => {
           <p className="text-sm sm:text-base leading-relaxed text-slate-200 font-sans mb-4">
             {INTRODUCTION_TEXT.problem}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-300 font-sans border-t border-emerald-900/40 pt-4 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-300 font-sans border-t border-emerald-900/40 pt-4">
             <div>
               <strong className="text-emerald-400 font-mono block mb-1">THE MONITORING NEED:</strong>
               {INTRODUCTION_TEXT.monitoringNeed}
@@ -36,53 +36,9 @@ export const AgronomicContextSection: React.FC = () => {
               {INTRODUCTION_TEXT.systemPurpose}
             </div>
           </div>
-
-          {/* Arva Etymology & Subsystem Architecture Family */}
-          <div className="border-t border-emerald-900/40 pt-4">
-            <div className="text-xs text-slate-300 mb-3">
-              <span className="font-mono text-emerald-400 font-semibold mr-1.5">ETYMOLOGY:</span>
-              <strong className="text-white">Arva</strong>, derived from the Latin word{' '}
-              <em className="text-emerald-300 font-serif not-italic">arvum</em>, meaning &ldquo;fertile,&rdquo; &ldquo;cultivated field,&rdquo; or &ldquo;arable land.&rdquo;
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
-              <div className="rounded-lg bg-[#07120a]/80 border border-emerald-800/40 p-3 flex flex-col justify-between">
-                <div>
-                  <div className="font-mono font-bold text-emerald-400 text-sm">ArvaCore</div>
-                  <div className="text-white font-medium text-[11px] mb-1">Automated Irrigation &amp; Pump Controller</div>
-                </div>
-                <div className="text-[10px] text-slate-400 leading-normal pt-2 border-t border-emerald-950/60 mt-1">
-                  Threshold decision logic, digital pump relay actuation, and in-line fluid flow verification.
-                </div>
-              </div>
-              <div className="rounded-lg bg-[#07120a]/80 border border-emerald-800/40 p-3 flex flex-col justify-between">
-                <div>
-                  <div className="font-mono font-bold text-cyan-400 text-sm">ArvaNode</div>
-                  <div className="text-white font-medium text-[11px] mb-1">Distributed Field Monitoring Nodes</div>
-                </div>
-                <div className="text-[10px] text-slate-400 leading-normal pt-2 border-t border-emerald-950/60 mt-1">
-                  Ultrasonic ponded depth sensing inside a stilling well &amp; root-zone (-15 cm) capacitive soil moisture.
-                </div>
-              </div>
-              <div className="rounded-lg bg-[#07120a]/80 border border-emerald-800/40 p-3 flex flex-col justify-between">
-                <div>
-                  <div className="font-mono font-bold text-emerald-300 text-sm">ArvaNet</div>
-                  <div className="text-white font-medium text-[11px] mb-1">Wireless Internet Gateway &amp; Wi-Fi Base</div>
-                </div>
-                <div className="text-[10px] text-slate-400 leading-normal pt-2 border-t border-emerald-950/60 mt-1">
-                  On-site radio receiver hub, agricultural Wi-Fi access station, and 4G LTE cellular WAN bridge.
-                </div>
-              </div>
-              <div className="rounded-lg bg-[#07120a]/80 border border-emerald-800/40 p-3 flex flex-col justify-between">
-                <div>
-                  <div className="font-mono font-bold text-cyan-300 text-sm">ArvaLink</div>
-                  <div className="text-white font-medium text-[11px] mb-1">Web Telemetry Dashboard &amp; Mobile App</div>
-                </div>
-                <div className="text-[10px] text-slate-400 leading-normal pt-2 border-t border-emerald-950/60 mt-1">
-                  Real-time paddy hydrological gauges, drying trend curves, irrigation alerts, and pump control.
-                </div>
-              </div>
-            </div>
+          <div className="border-t border-emerald-900/40 mt-4 pt-3 text-xs text-slate-400 font-sans">
+            <span className="text-emerald-400 font-mono font-semibold">THE ARVA ARCHITECTURE: </span>
+            Couples in-field monitoring nodes (<span className="text-slate-200">ArvaNode</span>), an on-site gateway (<span className="text-slate-200">ArvaNet</span>), and remote telemetry interfaces (<span className="text-slate-200">ArvaLink</span>) under automated closed-loop pump control (<span className="text-slate-200">ArvaCore</span>).
           </div>
         </div>
 

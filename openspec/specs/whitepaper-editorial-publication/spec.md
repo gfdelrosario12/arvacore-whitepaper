@@ -2,11 +2,18 @@
 Provide long-form academic whitepaper presentation, research provenance, problem context, and editorial layout for the ArvaCore project.
 ## Requirements
 ### Requirement: Authoritative Academic Prologue and Research Abstract
-The system SHALL present the full, authentic academic provenance of the ArvaCore research whitepaper, including the complete title, institution (Polytechnic University of the Philippines), degree program, the author roster led by Jenice Nicole C. Ramirez alongside Pranz Gabrielle N. Capucion and Gladwin Ferdz I. Del Rosario, date (September 2026), and study location (Barangay Silang, Lopez, Quezon).
+The system SHALL present the full, authentic academic provenance of the ArvaCore research whitepaper, including the complete title, institution (Polytechnic University of the Philippines), degree program, the author roster led by Gladwin Ferdz I. Del Rosario alongside Jenice Nicole C. Ramirez (project manager, research manuscript, data survey executions) and Pranz Gabrielle N. Capucion (hardware architecture), date (September 2026), and study location (Barangay Silang, Lopez, Quezon). The prologue SHALL also present the etymology of Arva ("cultivated field") and the four integrated subsystem tiers (ArvaCore, ArvaNode, ArvaNet, ArvaLink).
 
 #### Scenario: User visits whitepaper prologue
 - **WHEN** the user lands on the website
-- **THEN** the system displays the exact title "ARVACORE: AN IOT-BASED IRRIGATION MONITORING AND AUTOMATED WATER MANAGEMENT SYSTEM FOR RICE CULTIVATION", institutional affiliation, the lead author Jenice Nicole C. Ramirez prominently featured, and the study location without promotional marketing filler.
+- **THEN** the system displays the exact title "ARVACORE: AN IOT-BASED IRRIGATION MONITORING AND AUTOMATED WATER MANAGEMENT SYSTEM FOR RICE CULTIVATION", institutional affiliation, Gladwin Ferdz I. Del Rosario badged as project lead, Jenice Nicole C. Ramirez, and Pranz Gabrielle N. Capucion, along with the Arva etymology and subsystem tiers.
+
+### Requirement: Global Privacy-Friendly Web Analytics
+The system SHALL integrate web analytics (`@vercel/analytics/next`) to monitor readership, performance, and user engagement across all routes without intrusive tracking cookies.
+
+#### Scenario: Production web page load
+- **WHEN** the application loads across any page or viewport
+- **THEN** the analytics provider initializes unobtrusively, collecting visitor telemetry for the digital monograph.
 
 ### Requirement: Agronomic Problem Context and AWD Theoretical Grounding
 The system SHALL explain the agronomic and engineering context of water management in irrigated lowland rice farming as documented in the study, contrasting continuous flooding water consumption with sensor-informed monitoring and threshold-based irrigation, while documenting the labor and monitoring barriers faced by farmers in Barangay Silang, Lopez, Quezon.
